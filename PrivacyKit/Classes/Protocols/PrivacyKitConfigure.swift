@@ -47,6 +47,10 @@ public extension PrivacyKitConfigure where Self: PrivacyKit {
         self.includeBlur = enabled
     }
     
+    func setIncludeDeny(isEnabled enabled: Bool) {
+        self.includeDeny = enabled
+    }
+    
     /// Update the Privacy Kit Style to a custom type that implements PrivacyKitStyle. This includes
     /// theme colors and minor UI customizations.
     /// - Parameter style: A custom implementation of PrivacyKitStyle. The PrivacyKitStyle protocol

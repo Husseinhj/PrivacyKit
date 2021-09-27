@@ -24,19 +24,28 @@ public protocol PrivacyKitStyle {
     
     /// The background color for the default Privacy Notice View Controllers
     var errorColor: UIColor { get }
-
+    
     /// A corner radius to apply to the privacy notice background view.
     var backgroundCornerRadius: CGFloat { get }
-
+    
     /// The primary font for the privacy notice message.
     var paragraphFont: UIFont { get }
     
     /// The highlighted font for the Privacy Policy and Terms of Service
     /// links in the privacy notice message.
     var highlightFont: UIFont { get }
-
+    
     var paragraphAttrText: [NSAttributedString.Key: Any] { get }
     var highlightsAttrText: [NSAttributedString.Key: Any] { get }
+    
+    
+    var denyTitle: String { get }
+    var acceptTitle: String { get }
+    var buttonFont: UIFont { get }
+    var titleFont: UIFont { get }
+    var messageFont: UIFont { get }
+    
+    var alignment: NSTextAlignment { get }
 }
 
 extension PrivacyKitStyle {

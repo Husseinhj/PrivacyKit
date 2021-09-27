@@ -12,9 +12,16 @@ public struct DefaultPrivacyKitStyle: PrivacyKitStyle {
     public var textColor: UIColor = UIColor(red: 242/255, green: 239/255, blue: 234/255, alpha: 1)
     public var buttonHighlightColor: UIColor = UIColor(red: 242/255, green: 239/255, blue: 234/255, alpha: 0.3)
     public var errorColor: UIColor = UIColor(red: 37/255, green: 39/255, blue: 46/255, alpha: 0.1)
-
+    
     public var backgroundCornerRadius: CGFloat = 0
-
+    
     public var paragraphFont: UIFont = UIFont.systemFont(ofSize: 13)
     public var highlightFont: UIFont = UIFont.boldSystemFont(ofSize: 13)
+    
+    public var denyTitle: String = "Deny"
+    public var acceptTitle: String = "Agree"
+    public var buttonFont: UIFont = UIFont.systemFont(ofSize: 13)
+    public var alignment: NSTextAlignment = .left
+    public var titleFont: UIFont = UIFont.systemFont(ofSize: 16)
+    public var messageFont: UIFont = UIFont.systemFont(ofSize: 14)
 }
